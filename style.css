@@ -1,0 +1,383 @@
+body {
+    background-color: #050814;
+    color: #f5f7ff;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 76px;
+    padding: 0 70px;
+    background-color: rgba(5, 8, 20, 0.92);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(12px);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ccd5ff;
+}
+
+.menu a {
+    transition: color 0.8s, transform 0.8s;
+}
+
+.menu a:hover {
+    color: #ff6a2a;
+    transform: translateY(-2px);
+}
+
+.secao {
+    min-height: 100vh;
+    padding: 120px 70px 70px;
+    background: #050814;
+    display: flex;
+    align-items: center;
+}
+
+.secao-alternada {
+    background: #080d1d;
+}
+
+.conteudo {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.hero {
+    min-height: 100vh;
+    background: #050814 url("imagens/fazenda-espacial.png") center right / cover no-repeat;
+}
+
+.hero-conteudo {
+    margin-left: 0;
+    width: 650px;
+}
+
+.etiqueta {
+    margin-bottom: 18px;
+    color: #ff6a2a;
+    font-family: "Orbitron", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Orbitron", Arial, sans-serif;
+    letter-spacing: 0;
+}
+
+h1 {
+    margin-bottom: 26px;
+    font-size: 62px;
+    line-height: 1.05;
+}
+
+h2 {
+    margin-bottom: 34px;
+    max-width: 830px;
+    font-size: 42px;
+    line-height: 1.16;
+}
+
+h3 {
+    margin-bottom: 13px;
+    font-size: 20px;
+}
+
+p {
+    color: #d7ddf7;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.texto-destaque {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 1.55;
+}
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 52px;
+    margin-top: 34px;
+    border-radius: 6px;
+    background-color: #ff4f1f;
+    color: #150811;
+    font-weight: 800;
+    box-shadow: 0 14px 35px rgba(255, 79, 31, 0.34);
+    transition: background-color 0.8s, transform 0.8s;
+    gap: 8px;
+}
+
+.botao i{
+    display: inline-block;
+}
+
+.botao:hover i{
+    animation: setaAnimada 1.2s ease-in-out infinite;
+}
+
+@keyframes setaAnimada {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px); 
+    }
+}
+
+.botao:hover {
+    background-color: #ff7a33;
+    transform: translateY(-3px);
+}
+
+
+.grade-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+
+.card {
+    width: 250px;
+    min-height: 250px;
+    padding: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 8px;
+    background-color: rgba(12, 18, 43, 0.84);
+    transition: background-color 0.8s, color 0.8s, transform 0.8s;
+}
+
+@keyframes cards {
+    0% {
+        transform: translateZ(0);
+    }
+    100% {
+        transform: translateX(70px);
+    }
+}
+
+.card span {
+    display: block;
+    margin-bottom: 24px;
+    font-size: 38px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.card:hover {
+    background-color: #ff4f1f;
+    color: #150811;
+    transform: translateY(-2px) scale(1.07);
+}
+
+.card:hover i{
+    animation: cards 1.5s ease-in-out forwards;
+}
+
+.card:hover p {
+    color: #150811;
+}
+
+.duas-colunas {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.duas-colunas > div {
+    width: 500px;
+}
+
+.duas-colunas > div:first-child {
+    width: 510px;
+}
+
+.painel-codigo {
+    min-height: 320px;
+    padding: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    background-color: #0a1024;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.36);
+}
+
+.janela {
+    display: block;
+    width: 72px;
+    height: 14px;
+    margin-bottom: 34px;
+    border-radius: 20px;
+    background: #ff4f1f;
+}
+
+pre {
+    color: #dce5ff;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.tecnologias {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.tecnologias p {
+    padding: 14px 16px;
+    border-left: 4px solid #ff4f1f;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    transition: background-color 0.8s, color 0.8s, transform 0.8s;
+}
+
+.tecnologias i {
+    width: 28px;
+    color: #ff6a2a;
+    transition: color 0.8s;
+}
+
+.tecnologias p:hover {
+    background-color: #ff4f1f;
+    color: #150811;
+    transform: translateY(-2px) scale(1.07);
+}
+
+.tecnologias p:hover i {
+    color: #150811;
+    animation: setaAnimada 1.2s ease-in-out infinite;
+}
+
+.lista-destaque {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.lista-destaque div {
+    width: 520px;
+    height: 86px;
+    padding: 0 28px;
+    border-left: 5px solid #ff4f1f;
+    background-color: rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 700;
+    transition: background-color 0.8s, color 0.8s, transform 0.8s;
+}
+
+.lista-destaque div:hover {
+    background-color: #ff4f1f;
+    color: #150811;
+    transform: translateY(-2px) scale(1.07);
+}
+
+.lista-destaque span {
+    font-size: 30px;
+}
+
+.texto-central {
+    width: 820px;
+    margin-top: 42px;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.grade-beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.grade-beneficios p {
+    width: 530px;
+    min-height: 110px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.055);
+    transition: background-color 0.8s, color 0.8s, transform 0.8s;
+}
+
+.grade-beneficios p:hover {
+    background-color: #ff4f1f;
+    color: #150811;
+    transform: translateY(-2px) scale(1.07);
+}
+
+.grade-beneficios p:hover strong {
+    color: #150811;
+}
+
+.grade-beneficios strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #ff6a2a;
+    font-family: "Orbitron", Arial, sans-serif;
+    font-size: 24px;
+}
+
+.aplicacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.aplicacoes p {
+    padding: 18px 22px;
+    border-left: 4px solid #ff4f1f;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+    font-weight: 700;
+    transition: background-color 0.8s, color 0.8s, transform 0.8s;
+}
+
+.aplicacoes p:hover {
+    background-color: #ff4f1f;
+    color: #150811;
+    transform: translateY(-2px) scale(1.07);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 200px;
+    font-size: 1px;
+    background-color: rgba(10, 15, 37, 0.92);
+}
+
+footer p {
+    font-size: 19px;
+}
