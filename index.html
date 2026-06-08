@@ -152,6 +152,93 @@
                 </div>
             </div>
         </section>
+
+        <section id="opinioes" class="secao secao-formularios">
+            <div class="conteudo duas-colunas formulario-area">
+                <div class="coluna-formularios">
+                    <form class="formulario-card">
+                        <p class="etiqueta">Interesse espacial</p>
+                        <h3>O que você prefere?</h3>
+                        <label>
+                            <input type="radio" name="preferencia" value="planetas" checked>
+                            Planetas
+                        </label>
+                        <label>
+                            <input type="radio" name="preferencia" value="estrelas">
+                            Estrelas
+                        </label>
+                        <label>
+                            <input type="radio" name="preferencia" value="meteoros">
+                            Meteoros
+                        </label>
+                        <button type="submit" class="formulario-botao">Enviar</button>
+                    </form>
+
+                    <form class="formulario-card">
+                        <p class="etiqueta">Astro favorito</p>
+                        <h3>Qual é o seu astro favorito?</h3>
+                        <label for="astro-favorito">Nome do astro</label>
+                        <input type="text" id="astro-favorito" name="astro-favorito" placeholder="Ex: Sol, Lua, Vênus">
+                        <button type="submit" class="formulario-botao">Enviar</button>
+                    </form>
+
+                    <form class="formulario-card">
+                        <p class="etiqueta">Planeta preferido</p>
+                        <h3>Qual planeta do sistema solar você mais gosta?</h3>
+                        <label for="planeta-favorito">Escolha um planeta</label>
+                        <select id="planeta-favorito" name="planeta-favorito">
+                            <option value="mercurio">Mercúrio</option>
+                            <option value="venus">Vênus</option>
+                            <option value="terra">Terra</option>
+                            <option value="marte">Marte</option>
+                            <option value="jupiter">Júpiter</option>
+                            <option value="saturno">Saturno</option>
+                            <option value="urano">Urano</option>
+                            <option value="netuno">Netuno</option>
+                        </select>
+                        <button type="submit" class="formulario-botao">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="coluna-formularios">
+                    <form class="formulario-card">
+                        <p class="etiqueta">Exploração espacial</p>
+                        <h3>Você já sonhou em ir ao espaço?</h3>
+                        <label>
+                            <input type="radio" name="sonho-espacial" value="sim" checked>
+                            Sim
+                        </label>
+                        <label>
+                            <input type="radio" name="sonho-espacial" value="nao">
+                            Não
+                        </label>
+                        <button type="submit" class="formulario-botao">Enviar</button>
+                    </form>
+
+                    <form class="formulario-card">
+                        <p class="etiqueta">Tecnologia espacial</p>
+                        <h3>Qual tecnologia você acha mais interessante?</h3>
+                        <label for="tecnologia-favorita">Tecnologia favorita</label>
+                        <input type="text" id="tecnologia-favorita" name="tecnologia-favorita" placeholder="Ex: Hidropônica, robótica">
+                        <button type="submit" class="formulario-botao">Enviar</button>
+                    </form>
+
+                    <form class="formulario-card">
+                        <p class="etiqueta">Vida fora da Terra</p>
+                        <h3>Qual seria o melhor ambiente para morar?</h3>
+                        <label for="ambiente-preferido">Escolha um ambiente</label>
+                        <select id="ambiente-preferido" name="ambiente-preferido">
+                            <option value="orbita">Órbita terrestre</option>
+                            <option value="estaçao">Estação espacial</option>
+                            <option value="lua">Lua</option>
+                            <option value="marte">Marte</option>
+                            <option value="cintura-asteroides">Cintura de asteroides</option>
+                        </select>
+                        <button type="submit" class="formulario-botao">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Andrey Durante RM: 569922</p>
@@ -159,5 +246,6 @@
         <p>Felipe Eloy RM: 573404</p>
         <p>Fabrício Eloy RM: 573450</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
