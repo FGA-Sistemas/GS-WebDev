@@ -202,38 +202,26 @@
 
                 <div class="coluna-formularios">
                     <form class="formulario-card">
-                        <p class="etiqueta">Exploração espacial</p>
-                        <h3>Você já sonhou em ir ao espaço?</h3>
-                        <label>
-                            <input type="radio" name="sonho-espacial" value="sim" checked>
-                            Sim
-                        </label>
-                        <label>
-                            <input type="radio" name="sonho-espacial" value="nao">
-                            Não
-                        </label>
+                        <p class="etiqueta">Informações pessoais</p>
+                        <h3>Como você se chama?</h3>
+                        <label for="nome-usuario">Nome</label>
+                        <input type="text" id="nome-usuario" name="nome-usuario" placeholder="Digite seu nome">
                         <button type="submit" class="formulario-botao">Enviar</button>
                     </form>
 
                     <form class="formulario-card">
-                        <p class="etiqueta">Tecnologia espacial</p>
-                        <h3>Qual tecnologia você acha mais interessante?</h3>
-                        <label for="tecnologia-favorita">Tecnologia favorita</label>
-                        <input type="text" id="tecnologia-favorita" name="tecnologia-favorita" placeholder="Ex: Hidropônica, robótica">
+                        <p class="etiqueta">Idade</p>
+                        <h3>Qual é a sua idade?</h3>
+                        <label for="idade-usuario">Idade</label>
+                        <input type="number" id="idade-usuario" name="idade-usuario" placeholder="Digite sua idade" min="1">
                         <button type="submit" class="formulario-botao">Enviar</button>
                     </form>
 
                     <form class="formulario-card">
-                        <p class="etiqueta">Vida fora da Terra</p>
-                        <h3>Qual seria o melhor ambiente para morar?</h3>
-                        <label for="ambiente-preferido">Escolha um ambiente</label>
-                        <select id="ambiente-preferido" name="ambiente-preferido">
-                            <option value="orbita">Órbita terrestre</option>
-                            <option value="estaçao">Estação espacial</option>
-                            <option value="lua">Lua</option>
-                            <option value="marte">Marte</option>
-                            <option value="cintura-asteroides">Cintura de asteroides</option>
-                        </select>
+                        <p class="etiqueta">País</p>
+                        <h3>De qual país você é?</h3>
+                        <label for="pais-usuario">País</label>
+                        <input type="text" id="pais-usuario" name="pais-usuario" placeholder="Digite seu país">
                         <button type="submit" class="formulario-botao">Enviar</button>
                     </form>
                 </div>
