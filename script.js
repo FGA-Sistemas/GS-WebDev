@@ -18,7 +18,7 @@ function aplicarTema(tema) {
         // Tema Claro
         html.style.colorScheme = 'light';
         document.body.style.backgroundColor = '#f5f7ff';
-        document.body.style.color = '#050814';
+        document.body.style.color = '#000000';
         document.querySelector('header').style.backgroundColor = 'rgba(245, 247, 255, 0.92)';
         document.querySelector('header').style.borderBottomColor = 'rgba(0, 0, 0, 0.12)';
         
@@ -27,6 +27,51 @@ function aplicarTema(tema) {
         });
         document.querySelectorAll('.secao-alternada').forEach(secao => {
             secao.style.backgroundColor = '#ececf1';
+        });
+        
+        // Alterar cores dos textos para preto
+        document.querySelectorAll('p').forEach(p => {
+            p.style.color = '#000000';
+        });
+        document.querySelectorAll('h1, h2, h3').forEach(h => {
+            h.style.color = '#000000';
+        });
+        document.querySelectorAll('.texto-destaque').forEach(td => {
+            td.style.color = '#000000';
+        });
+        
+        // Alterar cards para cinza
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.backgroundColor = '#d3d3d3';
+            card.style.borderColor = 'rgba(0, 0, 0, 0.2)';
+            card.style.color = '#000000';
+        });
+        document.querySelectorAll('.card p').forEach(p => {
+            p.style.color = '#000000';
+        });
+        
+        // Alterar painel de código
+        document.querySelectorAll('.painel-codigo').forEach(painel => {
+            painel.style.backgroundColor = '#d3d3d3';
+            painel.style.color = '#000000';
+        });
+        document.querySelectorAll('.tecnologias').forEach(tech => {
+            tech.style.backgroundColor = '#d3d3d3';
+            tech.style.color = '#000000';
+        });
+        document.querySelectorAll('.tecnologias p').forEach(p => {
+            p.style.color = '#000000';
+        });
+        
+        // Alterar lista destaque e texto central
+        document.querySelectorAll('.lista-destaque').forEach(lista => {
+            lista.style.color = '#000000';
+        });
+        document.querySelectorAll('.lista-destaque div').forEach(item => {
+            item.style.color = '#000000';
+        });
+        document.querySelectorAll('.texto-central').forEach(tc => {
+            tc.style.color = '#000000';
         });
         
         document.querySelectorAll('.menu a').forEach(link => {
