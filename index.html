@@ -156,72 +156,53 @@
         <section id="opinioes" class="secao secao-formularios">
             <div class="conteudo duas-colunas formulario-area">
                 <div class="coluna-formularios">
-                    <form class="formulario-card">
+                    <form class="formulario-card" id="form-preferencia">
                         <p class="etiqueta">Interesse espacial</p>
                         <h3>O que você prefere?</h3>
-                        <label>
-                            <input type="radio" name="preferencia" value="planetas" checked>
-                            Planetas
-                        </label>
-                        <label>
-                            <input type="radio" name="preferencia" value="estrelas">
-                            Estrelas
-                        </label>
-                        <label>
-                            <input type="radio" name="preferencia" value="meteoros">
-                            Meteoros
-                        </label>
+                        <label for="preferencia-usuario">Preferência</label>
+                        <input type="text" id="preferencia-usuario" name="preferencia" placeholder="Ex: Planetas, Estrelas, Meteoros" required>
                         <button type="submit" class="formulario-botao">Enviar</button>
                     </form>
 
-                    <form class="formulario-card">
+                    <form class="formulario-card" id="form-astro">
                         <p class="etiqueta">Astro favorito</p>
                         <h3>Qual é o seu astro favorito?</h3>
                         <label for="astro-favorito">Nome do astro</label>
-                        <input type="text" id="astro-favorito" name="astro-favorito" placeholder="Ex: Sol, Lua, Vênus">
+                        <input type="text" id="astro-favorito" name="astro-favorito" placeholder="Ex: Sol, Lua, Vênus" required>
                         <button type="submit" class="formulario-botao">Enviar</button>
                     </form>
 
-                    <form class="formulario-card">
+                    <form class="formulario-card" id="form-planeta">
                         <p class="etiqueta">Planeta preferido</p>
                         <h3>Qual planeta do sistema solar você mais gosta?</h3>
-                        <label for="planeta-favorito">Escolha um planeta</label>
-                        <select id="planeta-favorito" name="planeta-favorito">
-                            <option value="mercurio">Mercúrio</option>
-                            <option value="venus">Vênus</option>
-                            <option value="terra">Terra</option>
-                            <option value="marte">Marte</option>
-                            <option value="jupiter">Júpiter</option>
-                            <option value="saturno">Saturno</option>
-                            <option value="urano">Urano</option>
-                            <option value="netuno">Netuno</option>
-                        </select>
+                        <label for="planeta-favorito">Nome do planeta</label>
+                        <input type="text" id="planeta-favorito" name="planeta-favorito" placeholder="Ex: Terra" required>
                         <button type="submit" class="formulario-botao">Enviar</button>
                     </form>
                 </div>
 
                 <div class="coluna-formularios">
-                    <form class="formulario-card">
+                    <form class="formulario-card" id="form-nome">
                         <p class="etiqueta">Informações pessoais</p>
                         <h3>Como você se chama?</h3>
                         <label for="nome-usuario">Nome</label>
-                        <input type="text" id="nome-usuario" name="nome-usuario" placeholder="Digite seu nome">
+                        <input type="text" id="nome-usuario" name="nome-usuario" placeholder="Digite seu nome" required>
                         <button type="submit" class="formulario-botao">Enviar</button>
                     </form>
 
-                    <form class="formulario-card">
+                    <form class="formulario-card" id="form-idade">
                         <p class="etiqueta">Idade</p>
                         <h3>Qual é a sua idade?</h3>
                         <label for="idade-usuario">Idade</label>
-                        <input type="number" id="idade-usuario" name="idade-usuario" placeholder="Digite sua idade" min="1">
+                        <input type="number" id="idade-usuario" name="idade-usuario" placeholder="Digite sua idade" min="1" step="1" required>
                         <button type="submit" class="formulario-botao">Enviar</button>
                     </form>
 
-                    <form class="formulario-card">
+                    <form class="formulario-card" id="form-pais">
                         <p class="etiqueta">País</p>
                         <h3>De qual país você é?</h3>
                         <label for="pais-usuario">País</label>
-                        <input type="text" id="pais-usuario" name="pais-usuario" placeholder="Digite seu país">
+                        <input type="text" id="pais-usuario" name="pais-usuario" placeholder="Digite seu país" required>
                         <button type="submit" class="formulario-botao">Enviar</button>
                     </form>
                 </div>

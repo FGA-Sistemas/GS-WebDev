@@ -5,3 +5,11 @@
 2. {
     Agora para os campos da direita faça o primeiro perguntando o nome, o segundo perguntando a idade e o terceiro o país
 } Ele trocou as perguntas dos campos da direita para os que eu pedi
+
+3. {
+    Agora para ter validação deixe todos os campos para que o usuário tenha que preencher
+} Ele mudou só os da direita
+
+4. {
+    Tem que mudar todos os campos, até o da coluna da esquerda, todos eles preisam ser preenchidos pelo usuario manualmente, não pode ser enviado vazio, nos formulários que tem uma lista de respostas certas, deve ser criado um array com as respostas certas, no formuario que pede um número deverá ter esssa validação de ser um número
+} Ele deixou os formularios para serem preenchidos e fez validação faltando somente na do país 
