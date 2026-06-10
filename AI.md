@@ -5,3 +5,7 @@
 1 - Tema {
     no menu do site crie um botão pequeno com um icone que relembre troca e esteja escrito tema
 } Ele criou um botao com icones de sol e lua, porém com somente 2 temas
+
+2 - Tema {
+    Precisam-se ter 3 escolhas de temas diferentes
+}
