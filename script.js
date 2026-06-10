@@ -79,14 +79,14 @@ function exibirResultado(perguntasIncorretas, acertos, notaFinal, totalPerguntas
     
     // Exibir perguntas incorretas
     if (perguntasIncorretas.length > 0) {
-        let html = '<p>❌ Perguntas respondidas incorretamente:</p>';
+        let html = '<p> Perguntas respondidas incorretamente:</p>';
         perguntasIncorretas.forEach(num => {
             html += `<div class="pergunta-incorreta">Pergunta ${num}</div>`;
         });
         perguntasIncorretasDiv.innerHTML = html;
     } else {
         perguntasIncorretasDiv.className = 'perguntas-incorretas vazio';
-        perguntasIncorretasDiv.innerHTML = '✅ Todas as respostas estão corretas! Parabéns!';
+        perguntasIncorretasDiv.innerHTML = ' Todas as respostas estão corretas! Parabéns!';
     }
     
     // Exibir nota final
