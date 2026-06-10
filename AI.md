@@ -20,3 +20,11 @@ crie 10 perguntas simples em que respostas sejam de sim ou não envolvendo esse 
 10. É tecnicamente possível construir uma fazenda espacial em uma estação espacial internacional?
 
 }
+
+2 - Quiz {
+    agora usando o html css e js crie uma seção em que tenha 10 espaços para o usuário selecionar sim ou não, essa seção deve estar estilizada conforme o resto da aplicação
+}
+
+3 - Quiz {
+    Para o contador final não use um alert e sim um texto que apareça após todas as perguntas serem respondidas, mostre quais os números das perguntas respondidas incorretamente  e embaixo a nota final e um agradecimento por fazer o quiz
+}
